@@ -1,167 +1,556 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Myers Hospitalized After Accident - Official Fan Support</title>
+    <title>Защита Эммы Майерс - JUSTFAG</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        @font-face {
+            font-family: 'MrRobot';
+            src: url('mrrobot.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.7;
+            font-family: 'Orbitron', monospace;
+            background: #000;
+            color: #ff0000;
             margin: 0;
             padding: 20px;
-            background-color: #0a0a0a;
-            color: #e8e6e3;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: #1a1a1a;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-            border: 1px solid #333;
+            border: 2px solid #ff0000;
+            padding: 20px;
+            background: #111;
+            position: relative;
+            box-shadow: 0 0 30px #ff0000;
         }
+        
+        .glitch {
+            position: relative;
+            animation: glitch 5s infinite;
+        }
+        
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        
         .header {
             text-align: center;
-            border-bottom: 2px solid #444;
-            padding-bottom: 20px;
             margin-bottom: 30px;
-        }
-        h1 {
-            color: #ffffff;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            font-weight: normal;
-            letter-spacing: -0.5px;
-        }
-        .timestamp {
-            color: #888;
-            font-style: italic;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        .news-image {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 2px solid #444;
-        }
-        .content {
-            font-size: 1.1em;
-        }
-        .lead {
-            font-size: 1.2em;
-            color: #fff;
-            border-left: 4px solid #d4af37;
-            padding-left: 15px;
-            margin: 25px 0;
-            font-style: italic;
-        }
-        .update-box {
-            background: #2d2d2d;
             padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border: 1px solid #444;
+            border: 1px solid #ff0000;
+            background: #220000;
         }
-        .support-section {
-            background: linear-gradient(135deg, #1e3a5f 0%, #2d4f7c 100%);
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
-            text-align: center;
+        
+        h1 {
+            color: #ff0000;
+            margin: 0;
+            font-size: 32px;
+            text-shadow: 0 0 10px #ff0000;
         }
-        .fan-message {
-            background: #252525;
+        
+        .subtitle {
+            color: #ff4444;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .message {
+            background: #1a0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ff0000;
+            position: relative;
+        }
+        
+        .alert {
+            background: #330000;
+            border: 1px solid #ff0000;
             padding: 15px;
             margin: 15px 0;
-            border-radius: 6px;
-            border-left: 3px solid #d4af37;
+            animation: pulse 2s infinite;
         }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 5px #ff0000; }
+            50% { box-shadow: 0 0 20px #ff0000; }
+            100% { box-shadow: 0 0 5px #ff0000; }
+        }
+        
+        .btn {
+            background: #330000;
+            color: #ff0000;
+            border: 2px solid #ff0000;
+            padding: 15px 30px;
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .btn:hover {
+            background: #ff0000;
+            color: #000;
+            box-shadow: 0 0 20px #ff0000;
+        }
+        
+        .links {
+            margin: 30px 0;
+            padding: 20px;
+            background: #1a0000;
+            border: 1px solid #ff0000;
+        }
+        
+        .link-item {
+            margin: 15px 0;
+            background: #220000;
+            border: 1px solid #ff0000;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .link-item:hover {
+            background: #330000;
+            transform: translateX(10px);
+        }
+        
+        .link-item a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: block;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .link-item a:hover {
+            color: #000;
+            background: #ff0000;
+        }
+        
+        .link-content {
+            padding: 20px;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .link-description {
+            color: #ff8888;
+            font-size: 14px;
+            display: block;
+        }
+        
+        .music-player {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #1a0000;
+            border: 2px solid #ff0000;
+        }
+        
+        .status {
+            color: #ff0000;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        
+        .warning {
+            color: #ff0000;
+            text-align: center;
+            padding: 20px;
+            border: 2px dashed #ff0000;
+            margin: 20px 0;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
         .footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            color: #888;
-            font-size: 0.9em;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #ff0000;
+            color: #ff4444;
+            font-size: 14px;
         }
-        .breaking-badge {
-            background: #b91c1c;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-        .quote {
-            font-style: italic;
-            color: #aaa;
+        
+        .blood-text {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+            font-size: 20px;
             text-align: center;
             margin: 20px 0;
+        }
+        
+        .access-denied {
+            background: #000;
+            color: #ff0000;
+            padding: 10px;
+            border: 1px solid #ff0000;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        
+        .scary-message {
+            background: #000;
+            border: 1px solid #ff0000;
             padding: 15px;
-            background: #252525;
-            border-radius: 6px;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .scary-message::before {
+            content: "⚠️ ПРЕДУПРЕЖДЕНИЕ ⚠️";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ff0000;
+            color: #000;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .volume-control {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .volume-control input {
+            width: 200px;
+            margin: 0 10px;
+        }
+        
+        .auto-play-notice {
+            color: #ff4444;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        .click-anywhere {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            color: #ff0000;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'MrRobot', 'Orbitron', monospace;
+        }
+        
+        .hello-friend {
+            font-family: 'MrRobot', 'Orbitron', monospace;
+            font-size: 48px;
+            color: #ff0000;
+            text-shadow: 0 0 15px #ff0000;
+            margin-bottom: 20px;
+            animation: glitch-text 3s infinite;
+        }
+        
+        @keyframes glitch-text {
+            0% { transform: translate(0); }
+            20% { transform: translate(-3px, 3px); }
+            40% { transform: translate(-3px, -3px); }
+            60% { transform: translate(3px, 3px); }
+            80% { transform: translate(3px, -3px); }
+            100% { transform: translate(0); }
+        }
+        
+        .justfag-tag {
+            font-family: 'MrRobot', 'Orbitron', monospace;
+            font-size: 18px;
+            color: #ff4444;
+            margin-top: 10px;
+        }
+
+        .fake-news-expose {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #1a0000;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+        }
+
+        .photo-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff0000;
+            overflow: hidden;
+            margin-right: 30px;
+            position: relative;
+            box-shadow: 0 0 20px #ff0000;
+            animation: circle-pulse 2s infinite;
+        }
+
+        @keyframes circle-pulse {
+            0%, 100% { box-shadow: 0 0 20px #ff0000; }
+            50% { box-shadow: 0 0 30px #ff0000; }
+        }
+
+        .photo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .expose-text {
+            flex: 1;
+        }
+
+        .expose-text h3 {
+            color: #ff0000;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            text-shadow: 0 0 10px #ff0000;
+        }
+
+        .expose-text p {
+            color: #ff8888;
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="breaking-badge">DEVELOPING STORY</div>
-            <h1>Emma Myers Transported to Medical Center Following Vehicle Incident in Beverly Hills</h1>
-            <div class="timestamp">Last updated: 30 minutes ago • Official Fan Community Report</div>
-        </div>
-
-        <img src="emma-support.jpg" alt="Emma Myers - Fan support gathering" class="news-image">
-
-        <div class="content">
-            <div class="lead">
-                The beloved "Wednesday" actress was involved in a serious incident earlier today while crossing a street in the Beverly Hills area.
-            </div>
-
-            <p>According to preliminary reports from local authorities, Emma Myers, 23, was struck by a vehicle this afternoon. Emergency services responded immediately to the scene following multiple 911 calls from concerned witnesses.</p>
-
-            <div class="update-box">
-                <strong>LATEST UPDATE:</strong> Emma has been transported to a nearby medical facility and is currently receiving treatment. Her condition is being closely monitored by medical professionals.
-            </div>
-
-            <p>An eyewitness at the scene described the moments following the incident: "There was immediate response from people in the area. Everyone was trying to help and make sure she was stable until paramedics arrived."</p>
-
-            <p>Local law enforcement has secured the area as part of their standard investigation procedure. Traffic in the vicinity was temporarily diverted while emergency crews worked at the scene.</p>
-
-            <div class="quote">
-                "Our primary focus right now is Emma's wellbeing and recovery. We're gathering all available information and will provide updates when appropriate."
-            </div>
-
-            <p>The news has sparked an outpouring of support across social media platforms, with fans worldwide expressing their concern and sending positive messages for the actress's recovery.</p>
-
-            <div class="support-section">
-                <h2>Global Fan Support</h2>
-                <p>Fans from around the world are coming together to send strength and positive energy to Emma during this challenging time.</p>
-                
-                <div class="fan-message">
-                    "Emma has brought so much light to our lives through her work. Now it's our turn to send that light back to her. Stay strong!"
-                </div>
-                
-                <div class="fan-message">
-                    "The entire fan community is standing with you, Emma. We're all praying for your quick and complete recovery."
-                </div>
-            </div>
-
-            <p>This developing situation has united Emma's global fanbase, with virtual vigils and support messages trending across multiple platforms. The collective hope is for positive news about her condition in the coming hours.</p>
-
-            <p><em>This report is based on available information and will be updated as more details are confirmed through official channels.</em></p>
-        </div>
-
-        <div class="footer">
-            <p>This independent fan community report was compiled from publicly available information</p>
-            <p>Our thoughts are with Emma and her loved ones • #StayStrongEmma</p>
+    <div class="click-anywhere" id="clickOverlay">
+        <div>
+            <div class="hello-friend">Fsociety</div>
+            <p>Кликните в любом месте что бы ознакомиться</p>
+            <div class="justfag-tag">@JUSTFAG</div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="header glitch">
+            <h1>ЗАЩИТА ЭММЫ МАЙЕРС</h1>
+            <div class="subtitle">Операция JUSTFAG - Борьба с фейковыми новостями</div>
+        </div>
+        
+        <div class="alert">
+            <strong>ВНИМАНИЕ:</strong> Новость об аварии Эммы Майерс - ЛОЖЬ! Мы отслеживаем распространителей...
+        </div>
+
+        <div class="fake-news-expose">
+            <div class="photo-circle">
+                <img src="1.jpg" alt="Фейковая новость">
+            </div>
+            <div class="expose-text">
+                <h3>ОБМАН!</h3>
+                <p>Эта фотография использовалась для распространения ложной информации. Мы вскрыли манипуляцию и защищаем правду. Каждый, кто участвует в распространении фейков, будет привлечен к ответственности.</p>
+            </div>
+        </div>
+        
+        <div class="scary-message" style="margin-top: 25px;">
+            <div style="margin-top: 25px;">
+                <strong>СИСТЕМНОЕ СООБЩЕНИЕ:</strong> Мы знаем кто вы. Мы видим вашу активность. 
+                Распространение ложной информации об Эмме Майерс будет пресекаться. 
+                Ваши IP-адреса зафиксированы.
+            </div>
+        </div>
+        
+        <div class="message">
+            <h2>МОЯ МИССИЯ: hello friend</h2>
+            <p>Я - JUSTFAG. Я защищаю правду и уничтожаю ложь. Каждый, кто распространяет фейки о Эмме Майерс, будет найден.</p>
+            <p>Эта страница - предупреждение для всех, кто играет с огнем.</p>
+        </div>
+        
+        <div class="blood-text">
+            "ПРАВДА БУДЕТ ВОСТОРЖЕСТВОВАТЬ, А ЛОЖЬ БУДЕТ УНИЧТОЖЕНА"
+        </div>
+        
+        <div class="music-player">
+            <h3>ТРЕК ПОДДЕРЖКИ:</h3>
+            <div class="status" id="musicStatus">Ожидание взаимодействия...</div>
+            <button class="btn" onclick="toggleAudio()" id="musicButton">ЗАПУСТИТЬ МУЗЫКУ</button>
+            <div class="volume-control">
+                <span>Громкость:</span>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.7" onchange="changeVolume(this.value)">
+            </div>
+            <div class="auto-play-notice" id="autoPlayNotice">[Автозапуск после первого клика]</div>
+        </div>
+        
+        <div class="warning">
+            МЫ СЛЕДИМ ЗА ВАМИ. БУДЬТЕ ОСТОРОЖНЫ В СВОИХ ДЕЙСТВИЯХ.
+        </div>
+        
+        <div class="links">
+            <h3>МОИ КОНТАКТЫ:</h3>
+            
+            <div class="link-item" onclick="openLink('https://t.me/JUSTFAG')">
+                <div class="link-content">
+                    <span class="link-title">Мой личный Telegram</span>
+                    <span class="link-description">Только для серьезных вопросов</span>
+                </div>
+            </div>
+            
+            <div class="link-item" onclick="openLink('https://t.me/ememtm')">
+                <div class="link-content">
+                    <span class="link-title">Мой канал об Эмме</span>
+                    <span class="link-description">Только проверенная информация</span>
+                </div>
+            </div>
+            
+            <div class="link-item" onclick="openLink('https://t.me/Emmamyerschatt')">
+                <div class="link-content">
+                    <span class="link-title">Чат фанатов Эммы</span>
+                    <span class="link-description">Место для настоящих фанатов</span>
+                </div>
+            </div>
+            
+            <div class="link-item" onclick="openLink('https://t.me/emmamyershq')">
+                <div class="link-content">
+                    <span class="link-title">Другой канал об Эмме</span>
+                    <span class="link-description">Благодарю за то что рассказали правду своим подписчикам</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="access-denied">
+            [SYSTEM] Access logging enabled...<br>
+            [SECURITY] Threat detection active...<br>
+            [MONITOR] Tracking fake news sources...<br>
+            [AUDIO] Waiting for user interaction...<br>
+            [STATUS] Operation JUSTFAG: STANDBY
+        </div>
+        
+        <div class="message">
+            <h2>ПОЧЕМУ Я ЭТО ДЕЛАЮ:</h2>
+            <p>В мире, полном лжи, кто-то должен стоять на страже правды. Как можно снять маску, когда она уже не маска, когда она такая же часть меня, как и я сам?</p>
+            <p>Эмма Майерс заслуживает уважения, а не лживых сплетен. Я хорошо читаю людей, мой секрет в том, что я ищу в них худшее».</p>
+            <p class="warning">Эмма в безопасности! Эмма здорова! Эмма под защитой justfag!</p>
+        </div>
+        
+        <div class="footer">
+            <p>Сайт взломан JUSTFAG для защиты правды и чести Эммы Майерс</p>
+            <p>© 2025 Операция "Защитник Правды" | Мы знаем всё</p>
+        </div>
+    </div>
+
+    <audio id="supportAudio" loop>
+        <source src="1.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элементы.
+    </audio>
+
+    <script>
+        const audio = document.getElementById('supportAudio');
+        const musicStatus = document.getElementById('musicStatus');
+        const musicButton = document.getElementById('musicButton');
+        const autoPlayNotice = document.getElementById('autoPlayNotice');
+        const clickOverlay = document.getElementById('clickOverlay');
+        let isPlaying = false;
+        let userInteracted = false;
+
+        function openLink(url) {
+            console.log(`%c ОТКРЫТИЕ ССЫЛКИ: ${url} `, "background: #ff0000; color: #000; font-size: 14px;");
+            window.open(url, '_blank');
+        }
+
+        clickOverlay.addEventListener('click', function firstClick() {
+            if (!userInteracted) {
+                userInteracted = true;
+                clickOverlay.style.display = 'none';
+                
+                setTimeout(() => {
+                    toggleAudio();
+                    autoPlayNotice.textContent = "[Автозапуск выполнен]";
+                    
+                    document.querySelector('.access-denied').innerHTML = `
+                        [SYSTEM] Access logging enabled...<br>
+                        [SECURITY] Threat detection active...<br>
+                        [MONITOR] Tracking fake news sources...<br>
+                        [AUDIO] Background track: PLAYING<br>
+                        [STATUS] Operation JUSTFAG: RUNNING
+                        [FSociety] FUCK SOCIETY
+                    `;
+                }, 500);
+            }
+        });
+
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+                musicStatus.textContent = "Музыка выключена";
+                musicButton.textContent = "ЗАПУСТИТЬ МУЗЫКУ";
+                isPlaying = false;
+            } else {
+                audio.play().then(() => {
+                    musicStatus.textContent = "МУЗЫКА ИГРАЕТ...";
+                    musicButton.textContent = "ОСТАНОВИТЬ МУЗЫКУ";
+                    isPlaying = true;
+                }).catch(error => {
+                    musicStatus.textContent = "Ошибка загрузки музыки";
+                    console.log("Audio error:", error);
+                });
+            }
+        }
+
+        function changeVolume(volume) {
+            audio.volume = volume;
+        }
+        
+        function randomGlitch() {
+            const messages = [
+                "МЫ НАБЛЮДАЕМ",
+                "ОСТАНОВИТЕСЬ",
+                "ПРАВДА ВАЖНА",
+                "JUSTFAG ВАС ВИДИТ",
+                "МУЗЫКА КОНТРОЛИРУЕТ",
+                "ВЫ НЕ В БЕЗОПАСНОСТИ",
+                "HELLO FRIEND",
+                "ОБМАН РАСКРЫТ!"
+            ];
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            console.log(`%c${randomMsg}`, 'color: #ff0000; font-size: 20px; font-weight: bold;');
+        }
+        
+        setInterval(randomGlitch, 5000);
+        
+        console.log("%c ВНИМАНИЕ: СИСТЕМА ЗАЩИТЫ АКТИВИРОВАНА ", "background: #ff0000; color: #000; font-size: 16px; font-weight: bold;");
+        console.log("%c Operation JUSTFAG: STANDBY ", "background: #000; color: #ff0000; border: 2px solid #ff0000; padding: 10px;");
+        console.log("%c ОЖИДАНИЕ ВЗАИМОДЕЙСТВИЯ ПОЛЬЗОВАТЕЛЯ ", "background: #ff0000; color: #000; font-size: 14px;");
+    </script>
 </body>
 </html>
